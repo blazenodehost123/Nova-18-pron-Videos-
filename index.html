@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Video Gallery</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background: url('bg.png') no-repeat center center fixed;
+            background-size: cover;
+        }
+
+        .overlay {
+            background: rgba(0, 0, 0, 0.7);
+            min-height: 100vh;
+        }
+
+        h1 {
+            text-align: center;
+            color: white;
+            padding: 20px;
+            margin: 0;
+        }
+
+        .gallery {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 20px;
+            padding: 20px;
+        }
+
+        .video-box {
+            background: #111;
+            padding: 10px;
+            border-radius: 12px;
+            box-shadow: 0 0 15px rgba(0,0,0,0.8);
+            transition: transform 0.3s;
+        }
+
+        .video-box:hover {
+            transform: scale(1.05);
+        }
+
+        video {
+            width: 100%;
+            border-radius: 10px;
+        }
+
+        .title {
+            color: white;
+            margin-top: 8px;
+            font-size: 14px;
+            text-align: center;
+        }
+    </style>
+</head>
+
+<body>
+<div class="overlay">
+
+<h1>🔥 My Video Gallery 🔥</h1>
+
+<div class="gallery">
+
+    <div class="video-box"><video controls src="vid1.mp4"></video><div class="title">Video 1</div></div>
+    <div class="video-box"><video controls src="vid2.mp4"></video><div class="title">Video 2</div></div>
+    <div class="video-box"><video controls src="vid3.mp4"></video><div class="title">Video 3</div></div>
+    <div class="video-box"><video controls src="vid4.mp4"></video><div class="title">Video 4</div></div>
+    <div class="video-box"><video controls src="vid5.mp4"></video><div class="title">Video 5</div></div>
+    <div class="video-box"><video controls src="vid6.mp4"></video><div class="title">Video 6</div></div>
+    <div class="video-box"><video controls src="vid7.mp4"></video><div class="title">Video 7</div></div>
+    <div class="video-box"><video controls src="vid8.mp4"></video><div class="title">Video 8</div></div>
+    <div class="video-box"><video controls src="vid9.mp4"></video><div class="title">Video 9</div></div>
+    <div class="video-box"><video controls src="vid10.mp4"></video><div class="title">Video 10</div></div>
+    <div class="video-box"><video controls src="vid11.mp4"></video><div class="title">Video 11</div></div>
+    <div class="video-box"><video controls src="vid12.mp4"></video><div class="title">Video 12</div></div>
+    <div class="video-box"><video controls src="vid13.mp4"></video><div class="title">Video 13</div></div>
+    <div class="video-box"><video controls src="vid14.mp4"></video><div class="title">Video 14</div></div>
+    <div class="video-box"><video controls src="vid15.mp4"></video><div class="title">Video 15</div></div>
+    <div class="video-box"><video controls src="vid16.mp4"></video><div class="title">Video 16</div></div>
+    <div class="video-box"><video controls src="vid17.mp4"></video><div class="title">Video 17</div></div>
+    <div class="video-box"><video controls src="vid18.mp4"></video><div class="title">Video 18</div></div>
+    <div class="video-box"><video controls src="vid19.mp4"></video><div class="title">Video 19</div></div>
+    <div class="video-box"><video controls src="vid20.mp4"></video><div class="title">Video 20</div></div>
+
+</div>
+</div>
+</body>
+</html>
